@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color:white;
+  z-index: 1;
+}
+
+body{
+  background-color: var(--background);
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  animation: move 1s linear infinite forwards;
+}
+
+
+
+::-webkit-scrollbar{
+  width: 0;
+}
+
+:root{
+  --color-pri: rgb(82,188,250);
+  --color-pri-light: rgba(82,188,250,0.445);
+  --color-sec:rgb(172,17,233);
+  --color-sec-light:rgba(172,17,233,0.274);
+  --background: rgb(253,253,224);
+  --text-primary: black;
+  --text-secondary: grey;
+  --accent: darkred;
+  --pc-width:62%;
+  --tab-width:90%;
+  --phone-width:100%;
+  --icon:rgb(157, 157, 155);
+  --contact-background:rgba(255,255,255,0.496)
+}
+[data-theme='dark'] {
+  --color-pri: rgb(82,188,250);
+  --color-pri-light: rgba(82,188,250,0.445);
+  --color-sec:rgb(172,17,233);
+  --color-sec-light:rgba(172,17,233,0.274);
+  --background: rgb(2,2,26);
+  --text-primary: white;
+  --text-secondary: grey;
+  --icon:rgb(209,217,252);
+  --contact-background:rgba(255,255,255,0.096)
+}
+body::before{
+  content:'';
+  position: fixed;
+  height: 200px;
+  width: 200px;
+  background: rgb(0, 255, 255);
+  filter: blur(140px);
+}
+
+body::after{
+  content: '';
+  position: fixed;
+  top:200px;
+  left: 250px;
+  height: 200px;
+  width: 200px;
+  background: rgb(103,0,255);
+  filter: blur(140px);
+
+}
+
+.bg-circle1{
+  position: fixed;
+  top:0px;
+  right: 0px;
+  height: 200px;
+  width: 200px;
+  background: rgb(0, 255, 255);
+  filter: blur(140px);
+}
+
+.bg-circle2{
+  position: fixed;
+  top: 100px;
+  right: 250px;
+  height: 200px;
+  width: 200px;
+  background: rgb(183, 0, 255);
+  filter: blur(150px);
+}
+
+.container{
+  width: var(--pc-width);
+  color: var(--text-primary);
+  padding: 10px 40px;
+  margin: 5px auto;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width:500px){
+  .container{
+    width: var(--phone-width);
+  }
+}

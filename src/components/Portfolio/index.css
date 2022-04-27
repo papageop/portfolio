@@ -1,0 +1,99 @@
+.portfolio-txt{
+    margin:10px;
+    color: var(--text-primary);
+}
+.carousel-root{
+    width: 80%;
+}
+.portfolio-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    /* min-height: 100vh; */
+    margin-top: 100px;
+}
+
+.portfolio-container .portfolio{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* margin-top: 15px; */
+    padding-bottom: 80px;
+    background-color: var(--contact-background);
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.portfolio-container .portfolio .portfolio-img{
+    height: 300px;
+    width: 300px;
+    border-radius: 40px;
+    /* background: url('../../assets/html.png'); */
+    background-size: cover;
+    background-position: center;
+    border:  2px solid var(--color-sec-light);
+}
+
+.portfolio-container .portfolio .portfolio-info{
+    margin-left: 50px;
+    font-family: 'Open Sans Condensed';
+    max-width: 50%;
+}
+
+.portfolio-container .portfolio .portfolio-info .name{
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: var(--text-primary);
+}
+
+
+.portfolio-container .portfolio .portfolio-info .position{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin: 0 10% 0 10%;
+    color: var(--text-primary);
+}
+
+.portfolio-container .portfolio .portfolio-info .about{
+    margin-top: 40px;
+    font-size: 17px;
+    color: var(--text-primary);
+    font-weight: 100;
+    margin: 15%;
+    
+}
+
+.portfolio-container .portfolio .portfolio-info .more{
+    font-size: 18px;
+    background: var(--color-sec-light);
+    padding: 17px 35px;
+    /* margin: 10%; */
+    border-radius: 50px;
+    /* position: absolute; */
+    transition: .1s ease;
+   
+}
+
+.portfolio-container .portfolio .portfolio-info .more span{
+    text-transform: capitalize;
+
+}
+
+.portfolio-container .portfolio .portfolio-info .more:hover{
+    background: transparent;
+    border: 2px solid var(--color-sec-light);
+}
+
+.slider{
+    background: none !important;
+}
+
+
+@import url("react-responsive-carousel/lib/styles/carousel.min.css");

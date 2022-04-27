@@ -1,0 +1,82 @@
+.form-txt{
+    font-size: 20px;
+    top:10px;
+    font-weight: 100;
+    color: var(--text-primary);
+    
+}
+
+
+.form-container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    background: var(--contact-background);
+    border-radius: 50px;
+
+}
+
+form{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    background-color: rgba(0,0,0,0.014);
+    padding: 20px;
+    border-radius: 50px;
+}
+
+form .btn.submit{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-sec-light);
+    padding: 17px 35px;
+    border-radius: 50px;
+    position: relative;
+    transition: .1s ease;
+    border: 2px solid var(--color-sec-light);
+}
+
+form .btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+ 
+}
+
+form .btn.submit:hover{
+    background: transparent;
+    border: 2px solid var(--color-sec-light);
+}
+
+form input{
+    color: black;
+    margin: 5% 0 5% 0;
+    display: block;
+    width: 100%;
+    border-radius: 50px;
+    transition: .1s ease;
+    border: 2px solid var(--color-sec-light);
+}
+
+form label{
+    color: var(--text-primary);
+    margin: 5% 0 5% 0;
+    display: block;
+}
+
+form textarea{
+    color: black;
+    width: 100%;
+    margin: 5% 0 5% 0;
+    display: block;
+    border-radius: 5px;
+    transition: .1s ease;
+    border: 2px solid var(--color-sec-light);
+    padding: 5px;
+}
